@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 
-const shema = Schema({
+const schema = Schema({
     ticketOwnerId: { type: String, unique: true },
     ticketType: { type: String, default: "Bug Report" },
     deleted: { type: Boolean, default: false },
