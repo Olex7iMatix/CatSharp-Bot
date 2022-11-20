@@ -1,0 +1,26 @@
+{
+  "name": "catsharp-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olex7iMatix/CatSharp-Bot.git"
+  },
+  "author": "Olex7",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olex7iMatix/CatSharp-Bot/issues"
+  },
+  "homepage": "https://github.com/Olex7iMatix/CatSharp-Bot#readme",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20"
+  }
+}
