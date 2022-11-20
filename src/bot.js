@@ -1,11 +1,12 @@
-import { config } from "dotenv"
-config()
-import { Client, GatewayIntentBits, Partials } from "discord.js"
+require("dotenv").config()
+const { Client, GatewayIntentBits, Partials } = require( "discord.js" )
 const bot = new Client({ intents: [GatewayIntentBits.Guilds], partials: [Partials.Channel] });
-import chalk from 'chalk'
 
+const slashCommands = require(__dirname + '/handlers/slashCommands.handler')
+
+slashCommands(bot)
 bot.on("ready", () => {
-    console.log(chalk.green("Ready!"));   
+    console.log("Ready!");   
 })
 
 bot.login(process.env.TOKEN)
